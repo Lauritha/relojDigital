@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<title>Reloj Digital</title>
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-md-10 col-sm-12 col-xs-12">
+				<div class="wrap">
+					<div class="widget">
+						<div class="fecha">
+							<p id="diaSemana" class="diaSemana"></p>
+							<p id="dia" class="dia"></p>
+							<p>de</p>
+							<p id="mes" class="mes"></p>
+							<p>del</p>
+							<p id="year" class="year"></p>
+						</div>
+						<div class="reloj">
+							<p id="horas" class="horas"></p>
+							<p>:</p>
+							<p id="minutos" class="minutos"></p>
+							<p>:</p>
+							<div class="caja-segundos">
+								<p id="ampm" class="ampm"></p>
+								<p id="segundos" class="segundos"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-12 col-xs-12">
+					<!-- Button trigger modal -->
+				<div id="log"></div>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  <i class="fa fa-globe" aria-hidden="true"></i>
+				</button>
+				<!-- Modal -->
+				<div class="modal" id="myModal" tabindex="-1" role="dialog"
+				     aria-labelledby="myModalLabel1" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				        <h4 class="modal-title" id="myModalLabel1">Capitales Del Mundo</h4>
+				      </div>
+				      <div class="modal-body">
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="chicago" data="0" value="Chicago">Chicago</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="sao" data="1" value="Sao Paulo">Sao Paulo</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="stgo" data="2" value="Santiago">Santiago</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="mex" data="3" value="México DF">México D.F</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="cara" data="4" value="Caracas">Caracas</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="brasi" data="5" value="Brasilia">Brasilia</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="quito" data="6" value="Quito">Quito</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="guaya" data="7" value="Guayaquil">Guayaquil</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="sta" data="8" value="Santa Marta">Santa Marta</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" class="nombreCapital" id="bog" data="9" value="Bógota">Bogotá</label>
+						</div>
+				      </div>
+				      <div class="modal-footer">
+				      	<h6>Presiona la x para salir!</h6>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<h5>Desarrollado por Laura Lizama</h5>
+			</div>
+		</div>
+	
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
